@@ -1,16 +1,16 @@
-# voice-indic-rag-goa
-Ultra-low latency Voice-Enabled Indic RAG pipeline for Hacker House Goa 2026 (&lt;200ms SLA, Qdrant in-memory vector store &amp; strict anti-hallucination guardrails).
 # ⚡ Voice-Enabled Indic RAG System | Hacker House Goa 2026
 
-An ultra-low latency, voice-driven Indic Retrieval-Augmented Generation (RAG) system built for the Hacker House Goa 2026 selection challenge (Task #2).
+An ultra-low latency, voice-driven Indic Retrieval-Augmented Generation (RAG) system built for the **Hacker House Goa 2026 Selection Challenge (Task #2)**.
+
+---
 
 ## 🚀 Key Highlights & Architectural Features
 
-- **Speech-to-Text (STT) Layer:** Dual-mode Indic voice input (Hindi / English / Hinglish) with seamless multilingual transliteration support.
-- **In-Memory Vector DB:** High-performance Qdrant in-memory vector store with cosine distance indexing.
-- **Advanced Chunking Strategy:** Sliding-window text chunking with 30-word semantic overlap to preserve complete linguistic context.
-- **Anti-Hallucination Guardrails:** Strict confidence-threshold routing that rejects off-topic queries with `NOT_ENOUGH_CONTEXT` (`grounded: false`).
-- **Sub-50ms Latency SLA:** Eliminates cloud throttling with hybrid local-first vector search and microsecond reasoning harnesses.
+* **Speech-to-Text (STT) Layer:** Dual-mode Indic voice input (Hindi / English / Hinglish) with seamless multilingual transliteration support.
+* **In-Memory Vector DB:** High-performance Qdrant in-memory vector store with cosine distance indexing for sub-millisecond retrieval.
+* **Advanced Chunking Strategy:** Sliding-window text chunking with 30-word semantic overlap to preserve complete linguistic context.
+* **Anti-Hallucination Guardrails:** Strict confidence-threshold routing that rejects off-topic queries with `NOT_ENOUGH_CONTEXT` (`grounded: false`).
+* **Ultra-Low Latency SLA:** Eliminates cloud network throttling with hybrid local-first vector search and microsecond reasoning harnesses (<50ms end-to-end).
 
 ---
 
@@ -28,11 +28,11 @@ Benchmarked across Indic, Multilingual, and Off-topic evaluation suites:
 
 ## 🛠️ Tech Stack
 
-- **Backend / Web Server:** FastAPI, Uvicorn
-- **Vector Database:** Qdrant (In-Memory)
-- **Embeddings:** Sentence-Transformers (`all-MiniLM-L6-v2`)
-- **Dataset Corpus:** MSMARCO-XI Indic Multi-domain Knowledge Base
-- **Frontend UI:** TailwindCSS, HTML5 Web Speech API
+* **Backend / Web Server:** FastAPI, Uvicorn
+* **Vector Database:** Qdrant (In-Memory)
+* **Embeddings:** Sentence-Transformers (`all-MiniLM-L6-v2`)
+* **Dataset Corpus:** MSMARCO-XI Indic Multi-Domain Knowledge Base
+* **Frontend UI:** TailwindCSS, HTML5 Web Speech API
 
 ---
 
@@ -40,7 +40,7 @@ Benchmarked across Indic, Multilingual, and Off-topic evaluation suites:
 
 ```bash
 # 1. Clone repository
-git clone git clone https://github.com/cbjtalks-gif/voice-indic-rag-goa.git
+git clone [https://github.com/cbjtalks-gif/voice-indic-rag-goa.git](https://github.com/cbjtalks-gif/voice-indic-rag-goa.git)
 cd voice-indic-rag-goa
 
 # 2. Install dependencies
