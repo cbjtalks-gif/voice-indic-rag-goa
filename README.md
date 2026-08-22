@@ -40,7 +40,7 @@ Benchmarked across Indic, Multilingual, and Off-topic evaluation suites:
 
 ```bash
 # 1. Clone repository
-git clone [https://github.com/cbjtalks-gif/voice-indic-rag-goa.git](https://github.com/cbjtalks-gif/voice-indic-rag-goa.git)
+git clone git clone https://github.com/cbjtalks-gif/voice-indic-rag-goa.git
 cd voice-indic-rag-goa
 
 # 2. Install dependencies
